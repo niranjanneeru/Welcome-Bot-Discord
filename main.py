@@ -29,6 +29,8 @@ async def on_member_join(member):
 
         back = cv2.imread('background.png')
         hh, ww = 480, 720  # back.shape
+        back = cv2.resize(back, (ww, hh), interpolation=cv2.INTER_AREA)
+
 
         # compute xoff and yoff for placement of upper left corner of resized image
         yoff = round((hh - h - 140) / 2)
@@ -52,4 +54,4 @@ async def on_member_join(member):
         await channel.send(f'<@{member.id}>')
 
 
-client.run("")
+client.run("Nzc1ODI3MTUwMzA5MTYzMDA4.X6r_Vg.A-V752YcCcuUAFAAAKezTAktNbA")
