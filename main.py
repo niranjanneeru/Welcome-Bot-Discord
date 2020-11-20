@@ -52,4 +52,4 @@ async def on_member_join(member):
         await channel.send(f'<@{member.id}>')
 
 
-client.run("Nzc1ODI3MTUwMzA5MTYzMDA4.X6r_Vg.d5ZK5jvSbuKRyJyXwy07BI5YZ_I")
+client.run("")
